@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../media/todo_back.jpg');
+    background-repeat: none;
+    background-size: cover;
+}
+nav {
+    background-color: #82d5fa;
+    height: 50px;
+    width: 100%;
+}
+
+nav > h2, section > h1 {
+    padding: 6px 20px 0px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 0 1px black;
+}
+
+section {
+    padding: 10px 0px 30px;
+    margin: 20px auto;
+    background-color: #aeafb0f2;
+    max-width: 450px;
+    min-height: 600px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+#addData {
+    margin-top: 40px;
+}
+
+#addData > #t {
+    margin: 0px 15px;
+    width: 42%;
+    background-color: #aeafb000;
+    border: none;
+    border-bottom: 2px solid white;
+    text-indent: 5px;
+    outline: none;
+}
+
+#addData > .time {
+    text-indent: 5px;
+    margin: 0px 5px;
+    width: 10%;
+    background-color: #aeafb000;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+#addData > button {
+    background-color: #82d5fa;
+    margin: 0px 2px;
+    border-radius: 5px;
+    /* width: 30px; */
+    font-size: 16px;
+    outline: none;
+    border: 1px solid white;
+    padding: 0px 2px;
+}
+
+#task {
+    margin-top: 50px;
+}
+#task > div {
+    margin: 10px;
+}
+
+#task > div > * {
+    /* display: inline; */
+    margin: 0px 5px
+}
+
+#task > div > .taskText {
+    margin-right: 50px;
+    width: 45% !important;
+    background-color: #aeafb000;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    /* border-bottom: 2px solid white; */
+
+} 
+
+#task > div > button {
+    background-color: #82d5fa;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 5px;
+}

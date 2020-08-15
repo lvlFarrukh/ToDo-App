@@ -10,9 +10,31 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/todo.css">
 
-        <title>My Cv</title>
+        <title>Todo App</title>
+        
+        <!-- Initiaize Firebase database -->
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyAYAgXZy2sxorEAcE7nMGwCaHjB_uXSJLI",
+              authDomain: "webandmobile-17e41.firebaseapp.com",
+              databaseURL: "https://webandmobile-17e41.firebaseio.com",
+              projectId: "webandmobile-17e41",
+              storageBucket: "webandmobile-17e41.appspot.com",
+              messagingSenderId: "160213140547",
+              appId: "1:160213140547:web:518de980d0cd13f71300f6",
+              measurementId: "G-G6WFRRB8TB"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+
     </head>
 
     <body>
@@ -28,7 +50,7 @@
                 <input type="text" id='t' placeholder="Enter Task">
                 <input type="text" class='time' placeholder="hour" maxlength="1">
                 <button onclick="addTask()">Add</button>
-                <button onclick="deleteAllTask(task)">Dlt All</button>
+                <button onclick="deleteAllTask('task')">Dlt All</button>
             </div>
 
             <div id='task'>
@@ -43,9 +65,10 @@
         </section>
 
 
-    <script src='app.js'></script>    
+    <script src='js/todo.js'></script>    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+    
+</body>
 </html>
