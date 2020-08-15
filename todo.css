@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../media/todo_back.jpg');
+    background-image: url('todo_back.jpg');
     background-repeat: none;
     background-size: cover;
 }
